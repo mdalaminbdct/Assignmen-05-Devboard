@@ -19,32 +19,228 @@
 </head>
 <body class="bg-gray-100 py-5">
 
-
-    <!-- Header Section  -->
-
+    <!---------- Header Section Starts-------->
     <header class="container mx-auto">
-
         <div class="flex justify-between items-center bg-white p-4 rounded-lg">
-
             <div class="flex items-center gap-2">
                 <img src="assets/logo.png" alt="">
                 <h1 class="text-4xl">Dev<span class="font-bold">Board</span></h1>
-
             </div>
+    
             <div class="flex items-center gap-5">
                 <div class="flex items-center gap-2 bg-gray-100 p-3 rounded-3xl">
                     <img src="assets/checkbox.png" alt="">
                     <h1 class="text-2xl"><span id="total-tasks">23</span></h1>
                 </div>
                 <img id="theme-change" class="bg-gray-100 p-3 rounded-4xl hover:rotate-210" src="assets/theme-btn.png" alt="">
-
             </div>
-
         </div>
 
     </header>
 
+    <!---------- Header Section Ends-------->
 
+
+    <!---------- Main Section Starts-------->
+
+    <main class="container mx-auto">
+        <div class="lg:flex gap-5 my-2">
+
+            <!---------- Tasks Part Starts-------->
+            <div class="bg-white col-span-3 p-5 rounded-lg lg:max-w-3/4 my-2">
+
+                <div class="lg:flex justify-between">
+                    <div class="flex items-center gap-5 bg-gray-100 p-4 rounded-3xl">
+                        <img class="bg-white p-3 rounded-4xl" src="assets/checkbox.png" alt="">
+                        <div>
+                            <p>Task Assigned</p>
+                            <h1 class="text-2xl font-bold">0<span id="task-assigned">6</span></h1>
+                        </div>
+                    </div>
+                    <div id="blog-btn" class="flex items-center gap-5 bg-gradient-to-r from-blue-800 to-blue-300 p-4 rounded-3xl">
+                        <img src="assets/board.png" alt="">
+                        <div>
+                            <p>Discover Something New Today!</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-5 bg-gray-100 p-4 rounded-3xl">
+                        <img class="bg-white p-3 rounded-3xl" src="assets/calender.png" alt="">
+                        <div>
+                            <p id="current-date">
+                                <!---- Current Date Will Be Show----->
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="border-t-1 border-dashed border-gray-200 my-4">
+
+
+                <!-------- Card Section Started------------>
+
+                <div class="grid lg:grid-cols-3 gap-5">
+
+                    <!------- Card 1 --------->
+                    <div class="card bg-gray-100">
+                        <div class="card-body">
+                        <div><p class="inline bg-white p-2 rounded-2xl">Shop Ease</p></div>
+                          <h2 class="card-title">Fix Mobile Button Issue</h2>
+                          <p class="bg-white p-2 rounded-md my-2">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
+                          <hr class="border-t-1 border-dashed border-gray-200 my-1">
+                          <div class="card-actions justify-between">
+                            <div>
+                                <p>Deadline</p>
+                                <p>5 March 2025</p>
+                            </div>
+                            <button id="task1-btn" class="btn btn-primary">Completed</button>
+                            
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <!------- Card 2 --------->
+                    <div class="card bg-gray-100">
+                        <div class="card-body">
+                        <div><p class="inline bg-white p-2 rounded-2xl">CloudSync</p></div>
+                          <h2 class="card-title">Add Dark Mode</h2>
+                          <p class="bg-white p-2 rounded-md my-2">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
+                          <hr class="border-t-1 border-dashed border-gray-200 my-1">
+                          
+                          <div class="card-actions justify-between">
+                            <div>
+                                <p>Deadline</p>
+                                <p>5 March 2025</p>
+                            </div>
+                            <button id="task2-btn" class="btn btn-primary">Completed</button>
+                            
+                          </div>
+                        </div>
+                      </div>
+
+                      <!------- Card 3 --------->
+                    <div class="card bg-gray-100">
+                        <div class="card-body">
+                        <div><p class="inline bg-white p-2 rounded-2xl">SwiftPay</p></div>
+                          <h2 class="card-title">Optimize  Home page</h2>
+                          <p class="bg-white p-2 rounded-md my-2">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
+                          <hr class="border-t-1 border-dashed border-gray-200 my-1">
+                          
+                          <div class="card-actions justify-between">
+                            <div>
+                                <p>Deadline</p>
+                                <p>5 March 2025</p>
+                            </div>
+                            <button id="task3-btn" class="btn btn-primary">Completed</button>
+                            
+                          </div>
+                        </div>
+                      </div>
+
+                      <!------- Card 4 --------->
+                    <div class="card bg-gray-100">
+                        <div class="card-body">
+                        <div><p class="inline bg-white p-2 rounded-2xl">Meta</p></div>
+                          <h2 class="card-title">Add new emoji 🤲</h2>
+                          <p class="bg-white p-2 rounded-md my-2">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
+                          <hr class="border-t-1 border-dashed border-gray-200 my-1">
+                          
+                          <div class="card-actions justify-between">
+                            <div>
+                                <p>Deadline</p>
+                                <p>5 March 2025</p>
+                            </div>
+                            <button id="task4-btn" class="btn btn-primary">Completed</button>
+                            
+                          </div>
+                        </div>
+                      </div>
+
+                      <!------- Card 5 --------->
+                    <div class="card bg-gray-100">
+                        <div class="card-body">
+                            <div><p class="inline bg-white p-2 rounded-2xl">Google LLC</p></div>
+                        
+                          <h2 class="card-title">Integrate OpenAI API</h2>
+                          <p class="bg-white p-2 rounded-md my-2">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
+                          <hr class="border-t-1 border-dashed border-gray-200 my-1">
+                          
+                          <div class="card-actions justify-between">
+                            <div>
+                                <p>Deadline</p>
+                                <p>5 March 2025</p>
+                            </div>
+                            <button id="task5-btn" class="btn btn-primary">Completed</button>
+                            
+                          </div>
+                        </div>
+                      </div>
+
+                      <!------- Card 6 --------->
+                    <div class="card bg-gray-100">
+                        <div class="card-body">
+                        <div><p class="inline bg-white p-2 rounded-2xl">Glassdoar</p></div>
+                          <h2 class="card-title">Improve Job searching</h2>
+                          <p class="bg-white p-2 rounded-md my-2">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
+                          <hr class="border-t-1 border-dashed border-gray-200 my-1">
+                          
+                          <div class="card-actions justify-between">
+                            <div>
+                                <p>Deadline</p>
+                                <p>5 March 2025</p>
+                            </div>
+                            <button id="task6-btn" class="btn btn-primary">Completed</button>
+                            
+                          </div>
+                        </div>
+                      </div>
+
+                     
+
+
+                </div>
+
+
+            </div>
+
+            <!---------- Tasks Part Ends-------->
+
+            <!---------- Activity Log Part Starts-------->
+            <div class="bg-white p-5 rounded-lg lg:w-1/4 my-2">
+
+                <div class="text-center">
+                    <div>
+                        <img class="mx-auto" src="assets/activity.png" alt="" srcset="">
+                        <p class="my-1">Activity Log</p>
+                    </div>
+    
+                    <button id="log-clear-btn" class="btn btn-primary">Clear History</button>
+                </div>
+
+
+                <hr class="border-t-1 border-dashed border-gray-200 my-3">
+
+                <div id="log-container">
+                    
+            
+                   
+                </div>
+
+
+
+
+            </div>
+
+            <!---------- Activity Log Part Ends-------->
+        </div>
+
+    </main>
+
+    <!---------- Main Section Ends-------->
+
+
+    
+    <script src="js/script.js"></script>
     
 </body>
 </html>
